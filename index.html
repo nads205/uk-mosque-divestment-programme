@@ -7,523 +7,451 @@
     <title>UK Mosques Divestment Campaign - Barclays Bank</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-         {
-            body { print-color-adjust: exact; }
+        body {
+            font-family: 'Inter', sans-serif;
         }
-        .tracking-row { border-bottom: 1px solid #e5e7eb; }
-        .tracking-row:hover { background-color: #f9fafb; }
+        .hero-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .hero-overlay {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.4) 100%);
+        }
+        .tracking-item {
+            transition: all 0.3s ease;
+        }
+        .tracking-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        .status-not-contacted { border-left: 4px solid #ef4444; }
+        .status-contacted { border-left: 4px solid #f59e0b; }
+        .status-response { border-left: 4px solid #10b981; }
+        .status-positive { border-left: 4px solid #059669; }
+        .status-declined { border-left: 4px solid #dc2626; }
+         {
+            .no-print { display: none !important; }
+            body { font-size: 12px; }
+            .hero-section { height: 300px !important; }
+        }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-900">
-    <div class="max-w-6xl mx-auto p-6">
-        
-        <!-- Header -->
-        <div class="bg-green-700 text-white p-8 rounded-lg mb-8">
-            <h1 class="text-4xl font-bold mb-4">
-                <i class="fas fa-mosque mr-3"></i>
-                UK Mosques Divestment Campaign
-            </h1>
-            <p class="text-xl">Encouraging UK mosques to divest from Barclays Bank due to concerns about Gaza</p>
-        </div>
-
-        <!-- Campaign Overview -->
-        <div class="bg-white p-6 rounded-lg shadow-md mb-8">
-            <h2 class="text-2xl font-bold mb-4 text-green-700">
-                <i class="fas fa-info-circle mr-2"></i>
-                Campaign Overview
-            </h2>
-            <div class="grid md:grid-cols-2 gap-6">
-                <div>
-                    <h3 class="text-lg font-semibold mb-3">Objective</h3>
-                    <p class="text-gray-700 mb-4">To encourage UK mosques currently banking with Barclays to consider alternative banking options due to concerns about the bank's financial ties and policies related to the situation in Gaza.</p>
-                    
-                    <h3 class="text-lg font-semibold mb-3">Approach</h3>
-                    <ul class="list-disc list-inside text-gray-700 space-y-1">
-                        <li>Respectful, informative outreach</li>
-                        <li>Providing alternative banking options</li>
-                        <li>Supporting community decision-making</li>
-                        <li>Maintaining interfaith dialogue</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold mb-3">Key Resources</h3>
-                    <ul class="list-disc list-inside text-gray-700 space-y-1">
-                        <li>Draft letter template (customizable)</li>
-                        <li>Contact information sources</li>
-                        <li>Progress tracking system</li>
-                        <li>Alternative banking options</li>
-                        <li>Response monitoring tools</li>
-                    </ul>
+<body class="bg-gray-50">
+    <!-- Hero Section -->
+    <section class="relative h-96 overflow-hidden hero-section">
+        <video autoplay muted loop playsinline class="hero-video" webkit-playsinline>
+            <source src="https://page.gensparksite.com/get_upload_url/ee014e99ce737c34fd2808a6c477de1b14c17a7b8acb881002d7bae59675162d/default/e96282e0-cce7-4ecb-bffd-99748b06aaf7" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="absolute inset-0 hero-overlay flex items-center justify-center">
+            <div class="text-center text-white px-4 max-w-4xl">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">UK Mosques Divestment Campaign</h1>
+                <p class="text-xl md:text-2xl mb-6">Calling on UK Mosques to Divest from Barclays Bank</p>
+                <div class="flex flex-wrap justify-center gap-4 text-lg">
+                    <span class="bg-green-600 px-4 py-2 rounded-full"><i class="fas fa-mosque mr-2"></i>Unity</span>
+                    <span class="bg-blue-600 px-4 py-2 rounded-full"><i class="fas fa-handshake mr-2"></i>Justice</span>
+                    <span class="bg-red-600 px-4 py-2 rounded-full"><i class="fas fa-heart mr-2"></i>Solidarity</span>
                 </div>
             </div>
         </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-4 py-8 max-w-6xl">
+        
+        <!-- Campaign Overview -->
+        <section class="bg-white rounded-lg shadow-lg p-8 mb-8">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 flex items-center">
+                <i class="fas fa-info-circle text-blue-600 mr-3"></i>Campaign Overview
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4 text-gray-700">Why This Campaign Matters</h3>
+                    <p class="text-gray-600 mb-4">
+                        Barclays has significant financial links to companies manufacturing armaments and military technology used in the previous and ongoing assault and killing of innocent Palestinian civilians, including women and children. Banking with Barclays contradicts Islamic principles of justice and solidarity with the oppressed.
+                    </p>
+                    <p class="text-gray-600">
+                        We are calling on UK mosques to review their banking relationships and consider divesting from Barclays in alignment with Islamic values of justice and solidarity.
+                    </p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4 text-gray-700">Campaign Goals</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i>
+                            <span>Raise awareness about Barclays' financial connections</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i>
+                            <span>Encourage ethical banking alternatives</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i>
+                            <span>Support Palestinian solidarity through action</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i>
+                            <span>Unite UK Muslim communities in ethical finance</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
         <!-- Draft Letter Template -->
-        <div class="bg-white p-6 rounded-lg shadow-md mb-8">
-            <h2 class="text-2xl font-bold mb-4 text-green-700">
-                <i class="fas fa-envelope mr-2"></i>
-                Draft Letter Template
+        <section class="bg-white rounded-lg shadow-lg p-8 mb-8">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 flex items-center">
+                <i class="fas fa-envelope text-blue-600 mr-3"></i>Draft Letter Template
             </h2>
-            <div class="bg-gray-50 p-6 rounded border-l-4 border-green-500">
+            <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-blue-500">
                 <div class="mb-4">
-                    <label class="block text-sm font-medium text-gray-700 mb-2">Customize Your Details:</label>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Customize Letter:</label>
                     <div class="grid md:grid-cols-2 gap-4 mb-4">
-                        <input type="text" id="senderName" placeholder="Your Name" class="border border-gray-300 rounded px-3 py-2 w-full">
-                        <input type="text" id="senderOrg" placeholder="Your Organization (optional)" class="border border-gray-300 rounded px-3 py-2 w-full">
+                        <input type="text" id="mosqueName" placeholder="Mosque Name" class="p-3 border rounded-lg w-full">
+                        <input type="text" id="yourName" placeholder="Your Name" class="p-3 border rounded-lg w-full">
                     </div>
-                    <button onclick="updateLetterTemplate()" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">
-                        <i class="fas fa-sync mr-2"></i>Update Template
+                </div>
+                <div class="bg-white p-6 rounded border">
+                    <div id="letterContent">
+                        <p><strong>Subject: Request for Ethical Banking Review - Divestment from Barclays Bank</strong></p>
+                        <br>
+                        <p>Assalamu Alaikum,</p>
+                        <br>
+                        <p>Dear Respected Leadership of <span class="mosque-name-placeholder">[Mosque Name]</span>,</p>
+                        <br>
+                        <p>I hope this letter finds you in good health and high spirits. I am writing to you as a concerned member of the Muslim community regarding an important matter that affects our collective commitment to Islamic principles of justice and ethical conduct.</p>
+                        <br>
+                        <p>I would like to bring to your attention concerns regarding Barclays Bank's financial connections that may conflict with Islamic values. Barclays has significant financial links to companies manufacturing armaments and military technology used in the previous and ongoing assault and killing of innocent Palestinian civilians, including women and children. Banking with Barclays contradicts Islamic principles of justice and solidarity with the oppressed.</p>
+                        <br>
+                        <p>As Muslims, we are called to uphold justice and stand with the oppressed. The Quran reminds us: "O you who believe! Stand out firmly for justice, as witnesses to Allah, even if it be against yourselves, your parents, and your relatives" (4:135).</p>
+                        <br>
+                        <p>I respectfully request that <span class="mosque-name-placeholder">[Mosque Name]</span> consider:</p>
+                        <ul class="list-disc ml-6 my-4">
+                            <li>Reviewing your current banking relationships with Barclays Bank</li>
+                            <li>Exploring ethical banking alternatives that align with Islamic values</li>
+                            <li>Making a public commitment to divest from institutions that contradict our principles</li>
+                            <li>Educating our community about ethical financial choices</li>
+                        </ul>
+                        <br>
+                        <p>There are several ethical banking alternatives available, including Islamic banks and building societies that do not have these concerning financial connections.</p>
+                        <br>
+                        <p>I understand that such decisions require careful consideration and consultation. I am happy to provide additional information or resources to support this important discussion within your leadership team.</p>
+                        <br>
+                        <p>Thank you for your time and consideration of this matter. May Allah guide us all in making decisions that reflect our commitment to justice and our solidarity with the oppressed.</p>
+                        <br>
+                        <p>Barakallahu feek,</p>
+                        <p><span class="your-name-placeholder">[Your Name]</span></p>
+                        <br>
+                        <p><em>Contact: [Your Email/Phone]</em></p>
+                    </div>
+                </div>
+                <div class="mt-4 flex gap-4">
+                    <button onclick="updateLetter()" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                        <i class="fas fa-refresh mr-2"></i>Update Letter
+                    </button>
+                    <button onclick="copyLetter()" class="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition-colors">
+                        <i class="fas fa-copy mr-2"></i>Copy to Clipboard
                     </button>
                 </div>
-                
-                <div id="letterTemplate" class="bg-white p-6 rounded border text-sm leading-relaxed">
-                    <p class="mb-4"><strong>Subject: Request for Consideration of Banking Relationship Review</strong></p>
-                    
-                    <p class="mb-4">Assalamu Alaikum and peace be upon you,</p>
-                    
-                    <p class="mb-4">I hope this letter finds you and your community in good health and high spirits. I am writing to you as a concerned member of the Muslim community in the UK.</p>
-                    
-                    <p class="mb-4">I am reaching out regarding your mosque's current banking arrangements, specifically if you are currently banking with Barclays Bank. Recent reports and investigations have highlighted Barclays' financial relationships and investments that some community members find concerning in relation to the ongoing situation in Gaza and Palestine.</p>
-                    
-                    <p class="mb-4">Several financial institutions and investment firms have been scrutinized for their connections to companies involved in activities that may contribute to the humanitarian crisis in Gaza. Many individuals and organizations are choosing to align their financial practices with their ethical values by considering alternative banking options.</p>
-                    
-                    <p class="mb-4">I would like to respectfully suggest that your mosque consider:</p>
-                    <ul class="list-disc list-inside mb-4 ml-4">
-                        <li>Reviewing your current banking relationships</li>
-                        <li>Exploring ethical banking alternatives such as Islamic banks or cooperative banks</li>
-                        <li>Considering institutions that align more closely with Islamic values and community concerns</li>
-                    </ul>
-                    
-                    <p class="mb-4">Some alternative banking options to consider include:</p>
-                    <ul class="list-disc list-inside mb-4 ml-4">
-                        <li>Al Rayan Bank (Islamic banking)</li>
-                        <li>The Co-operative Bank (ethical banking)</li>
-                        <li>Triodos Bank (sustainable banking)</li>
-                        <li>Local credit unions</li>
-                    </ul>
-                    
-                    <p class="mb-4">I understand that changing banking relationships is a significant decision that requires careful consideration of practical factors including services, costs, and convenience. I am not asking for an immediate decision, but rather encouraging thoughtful consideration of how financial choices can reflect our community's values.</p>
-                    
-                    <p class="mb-4">If you would like to discuss this matter further or if you need any additional information about alternative banking options, I would be happy to provide resources or facilitate connections with financial advisors familiar with Islamic banking principles.</p>
-                    
-                    <p class="mb-4">Thank you for your time and consideration. May Allah guide us all in making decisions that benefit our community and reflect our values.</p>
-                    
-                    <p class="mb-4">Barakallahu feeki and with utmost respect,</p>
-                    
-                    <p class="mb-2"><strong><span id="displaySenderName">[Your Name]</span></strong></p>
-                    <p><span id="displaySenderOrg">[Your Organization]</span></p>
-                    <p>Email: [Your Email]</p>
-                    <p>Phone: [Your Phone] (optional)</p>
-                </div>
-                
-                <button onclick="copyLetter()" class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
-                    <i class="fas fa-copy mr-2"></i>Copy Letter
-                </button>
             </div>
-        </div>
+        </section>
 
         <!-- Contact Resources -->
-        <div class="bg-white p-6 rounded-lg shadow-md mb-8">
-            <h2 class="text-2xl font-bold mb-4 text-green-700">
-                <i class="fas fa-address-book mr-2"></i>
-                Finding Mosque Contact Information
+        <section class="bg-white rounded-lg shadow-lg p-8 mb-8">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 flex items-center">
+                <i class="fas fa-address-book text-blue-600 mr-3"></i>Finding Mosque Contacts
             </h2>
-            <div class="grid md:grid-cols-2 gap-6">
+            <div class="grid md:grid-cols-2 gap-8">
                 <div>
-                    <h3 class="text-lg font-semibold mb-3">Online Directories</h3>
-                    <ul class="space-y-2">
-                        <li class="flex items-center">
-                            <i class="fas fa-globe text-blue-500 mr-2"></i>
-                            <a href="https://www.mosques.co.uk/" class="text-blue-600 hover:underline" target="_blank">Mosques.co.uk</a>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-globe text-blue-500 mr-2"></i>
-                            <a href="https://www.islamicfinder.org/" class="text-blue-600 hover:underline" target="_blank">Islamic Finder</a>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-globe text-blue-500 mr-2"></i>
-                            <a href="https://muslimsinbritain.org/" class="text-blue-600 hover:underline" target="_blank">Muslims in Britain</a>
-                        </li>
-                    </ul>
-                    
-                    <h3 class="text-lg font-semibold mb-3 mt-6">Regional Organizations</h3>
-                    <ul class="space-y-2">
-                        <li class="flex items-center">
-                            <i class="fas fa-building text-green-500 mr-2"></i>
-                            <span class="text-gray-700">Local Islamic societies</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-building text-green-500 mr-2"></i>
-                            <span class="text-gray-700">Council offices (community relations)</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-building text-green-500 mr-2"></i>
-                            <span class="text-gray-700">Interfaith groups</span>
-                        </li>
-                    </ul>
+                    <h3 class="text-xl font-semibold mb-4 text-gray-700">Online Directories</h3>
+                    <div class="space-y-4">
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-gray-800">Muslim Council of Britain (MCB)</h4>
+                            <p class="text-sm text-gray-600 mb-2">Comprehensive directory of UK mosques and Islamic centers</p>
+                            <a href="https://mcb.org.uk" class="text-blue-600 hover:underline" target="_blank">mcb.org.uk</a>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-gray-800">Find a Mosque UK</h4>
+                            <p class="text-sm text-gray-600 mb-2">Searchable database by location</p>
+                            <a href="https://www.findamosque.co.uk" class="text-blue-600 hover:underline" target="_blank">findamosque.co.uk</a>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-gray-800">Islamic Society of Britain</h4>
+                            <p class="text-sb text-gray-600 mb-2">Network of Islamic organizations</p>
+                            <a href="https://www.isb.org.uk" class="text-blue-600 hover:underline" target="_blank">isb.org.uk</a>
+                        </div>
+                    </div>
                 </div>
                 <div>
-                    <h3 class="text-lg font-semibold mb-3">Search Strategy</h3>
-                    <div class="bg-gray-50 p-4 rounded">
-                        <ol class="list-decimal list-inside space-y-2 text-sm">
-                            <li>Search by city/region on mosque directories</li>
-                            <li>Look for mosque websites and contact pages</li>
-                            <li>Find email addresses (preferred) or phone numbers</li>
-                            <li>Note mosque names, addresses, and leadership</li>
-                            <li>Check social media for additional contact info</li>
-                            <li>Verify contact information before outreach</li>
-                        </ol>
+                    <h3 class="text-xl font-semibold mb-4 text-gray-700">Contact Methods</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-envelope text-blue-500 mr-3 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold">Email Outreach</h4>
+                                <p class="text-sm text-gray-600">Most professional and documented method</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-phone text-green-500 mr-3 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold">Phone Calls</h4>
+                                <p class="text-sm text-gray-600">Direct conversation with mosque leadership</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-red-500 mr-3 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold">In-Person Visits</h4>
+                                <p class="text-sm text-gray-600">Most impactful for local mosques</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-share-alt text-purple-500 mr-3 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold">Social Media</h4>
+                                <p class="text-sm text-gray-600">Facebook, Twitter, Instagram outreach</p>
+                            </div>
+                        </div>
                     </div>
-                    
-                    <h3 class="text-lg font-semibold mb-3 mt-6">Contact Methods Priority</h3>
-                    <div class="space-y-2">
-                        <div class="flex items-center justify-between">
-                            <span class="flex items-center">
-                                <i class="fas fa-envelope text-blue-500 mr-2"></i>Email
-                            </span>
-                            <span class="text-green-600 font-semibold">Preferred</span>
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <span class="flex items-center">
-                                <i class="fas fa-phone text-orange-500 mr-2"></i>Phone
-                            </span>
-                            <span class="text-yellow-600">Secondary</span>
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <span class="flex items-center">
-                                <i class="fas fa-mail-bulk text-gray-500 mr-2"></i>Postal Mail
-                            </span>
-                            <span class="text-gray-600">If needed</span>
-                        </div>
+                    <div class="mt-6 bg-blue-50 p-4 rounded-lg">
+                        <h4 class="font-semibold text-blue-800 mb-2">Regional Islamic Councils</h4>
+                        <ul class="text-sm text-blue-700 space-y-1">
+                            <li>• London Islamic Cultural Centre</li>
+                            <li>• Birmingham Central Mosque</li>
+                            <li>• Manchester Islamic Centre</li>
+                            <li>• Edinburgh Central Mosque</li>
+                            <li>• Cardiff Mosque</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- Tracking System -->
-        <div class="bg-white p-6 rounded-lg shadow-md mb-8">
-            <h2 class="text-2xl font-bold mb-4 text-green-700">
-                <i class="fas fa-chart-line mr-2"></i>
-                Campaign Tracking System
+        <section class="bg-white rounded-lg shadow-lg p-8 mb-8">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 flex items-center">
+                <i class="fas fa-tasks text-blue-600 mr-3"></i>Campaign Tracking System
             </h2>
             
-            <!-- Add New Contact Form -->
-            <div class="bg-blue-50 p-4 rounded mb-6">
-                <h3 class="text-lg font-semibold mb-3">Add New Mosque Contact</h3>
+            <div class="mb-6 grid md:grid-cols-4 gap-4">
+                <div class="bg-red-50 p-4 rounded-lg text-center">
+                    <div class="text-2xl font-bold text-red-600" id="notContactedCount">0</div>
+                    <div class="text-sm text-red-700">Not Contacted</div>
+                </div>
+                <div class="bg-yellow-50 p-4 rounded-lg text-center">
+                    <div class="text-2xl font-bold text-yellow-600" id="contactedCount">0</div>
+                    <div class="text-sm text-yellow-700">Contacted</div>
+                </div>
+                <div class="bg-green-50 p-4 rounded-lg text-center">
+                    <div class="text-2xl font-bold text-green-600" id="responseCount">0</div>
+                    <div class="text-sm text-green-700">Responded</div>
+                </div>
+                <div class="bg-blue-50 p-4 rounded-lg text-center">
+                    <div class="text-2xl font-bold text-blue-600" id="totalCount">0</div>
+                    <div class="text-sm text-blue-700">Total Mosques</div>
+                </div>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="text-lg font-semibold mb-4">Add New Mosque</h3>
                 <div class="grid md:grid-cols-3 gap-4 mb-4">
-                    <input type="text" id="mosqueName" placeholder="Mosque Name" class="border border-gray-300 rounded px-3 py-2">
-                    <input type="text" id="mosqueLocation" placeholder="City/Area" class="border border-gray-300 rounded px-3 py-2">
-                    <input type="email" id="mosqueEmail" placeholder="Email Address" class="border border-gray-300 rounded px-3 py-2">
+                    <input type="text" id="newMosqueName" placeholder="Mosque Name" class="p-3 border rounded-lg">
+                    <input type="text" id="newMosqueLocation" placeholder="Location/City" class="p-3 border rounded-lg">
+                    <input type="email" id="newMosqueContact" placeholder="Email/Phone" class="p-3 border rounded-lg">
                 </div>
-                <div class="grid md:grid-cols-2 gap-4 mb-4">
-                    <input type="text" id="mosquePhone" placeholder="Phone (optional)" class="border border-gray-300 rounded px-3 py-2">
-                    <input type="text" id="mosqueContact" placeholder="Contact Person (optional)" class="border border-gray-300 rounded px-3 py-2">
-                </div>
-                <button onclick="addMosqueContact()" class="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700">
+                <button onclick="addMosque()" class="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition-colors">
                     <i class="fas fa-plus mr-2"></i>Add Mosque
                 </button>
             </div>
 
-            <!-- Statistics Dashboard -->
-            <div class="grid md:grid-cols-4 gap-4 mb-6">
-                <div class="bg-blue-100 p-4 rounded text-center">
-                    <div class="text-2xl font-bold text-blue-600" id="totalMosques">0</div>
-                    <div class="text-sm text-blue-700">Total Mosques</div>
-                </div>
-                <div class="bg-yellow-100 p-4 rounded text-center">
-                    <div class="text-2xl font-bold text-yellow-600" id="contactedMosques">0</div>
-                    <div class="text-sm text-yellow-700">Contacted</div>
-                </div>
-                <div class="bg-green-100 p-4 rounded text-center">
-                    <div class="text-2xl font-bold text-green-600" id="respondedMosques">0</div>
-                    <div class="text-sm text-green-700">Responded</div>
-                </div>
-                <div class="bg-purple-100 p-4 rounded text-center">
-                    <div class="text-2xl font-bold text-purple-600" id="successRate">0%</div>
-                    <div class="text-sm text-purple-700">Response Rate</div>
-                </div>
-            </div>
-
-            <!-- Mosque List and Tracking -->
-            <div>
-                <h3 class="text-lg font-semibold mb-3">Mosque Contact List</h3>
-                <div class="overflow-x-auto">
-                    <table class="w-full text-sm">
-                        <thead class="bg-gray-100">
-                            <tr>
-                                <th class="px-4 py-2 text-left">Mosque Name</th>
-                                <th class="px-4 py-2 text-left">Location</th>
-                                <th class="px-4 py-2 text-left">Contact</th>
-                                <th class="px-4 py-2 text-left">Status</th>
-                                <th class="px-4 py-2 text-left">Date Contacted</th>
-                                <th class="px-4 py-2 text-left">Response</th>
-                                <th class="px-4 py-2 text-left">Actions</th>
-                            </tr>
-                        </thead>
-                        <tbody id="mosqueTableBody">
-                            <!-- Dynamic content will be inserted here -->
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <!-- Export/Import Functions -->
-            <div class="mt-6 pt-4 border-t border-gray-200">
-                <h3 class="text-lg font-semibold mb-3">Data Management</h3>
-                <div class="flex flex-wrap gap-3">
-                    <button onclick="exportData()" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+            <div class="mb-6">
+                <div class="flex gap-4 mb-4">
+                    <button onclick="exportData()" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
                         <i class="fas fa-download mr-2"></i>Export Data
                     </button>
-                    <button onclick="document.getElementById('importFile').click()" class="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700">
+                    <input type="file" id="importFile" accept=".json" style="display: none;" onchange="importData(event)">
+                    <button onclick="document.getElementById('importFile').click()" class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors">
                         <i class="fas fa-upload mr-2"></i>Import Data
                     </button>
-                    <input type="file" id="importFile" accept=".json" style="display: none;" onchange="importData(event)">
-                    <button onclick="clearAllData()" class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700">
-                        <i class="fas fa-trash mr-2"></i>Clear All Data
-                    </button>
                 </div>
             </div>
-        </div>
 
-        <!-- Additional Resources -->
-        <div class="bg-white p-6 rounded-lg shadow-md mb-8">
-            <h2 class="text-2xl font-bold mb-4 text-green-700">
-                <i class="fas fa-book mr-2"></i>
-                Additional Resources
+            <div id="mosqueList" class="space-y-4">
+                <!-- Mosques will be dynamically added here -->
+            </div>
+        </section>
+
+        <!-- Resources and Alternative Banks -->
+        <section class="bg-white rounded-lg shadow-lg p-8 mb-8">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 flex items-center">
+                <i class="fas fa-university text-blue-600 mr-3"></i>Ethical Banking Alternatives
             </h2>
-            <div class="grid md:grid-cols-2 gap-6">
-                <div>
-                    <h3 class="text-lg font-semibold mb-3">Ethical Banking Options</h3>
-                    <ul class="space-y-3">
-                        <li class="border-l-4 border-green-500 pl-4">
-                            <strong>Al Rayan Bank</strong><br>
-                            <span class="text-gray-600">UK's largest Islamic bank offering Sharia-compliant banking services</span>
-                        </li>
-                        <li class="border-l-4 border-blue-500 pl-4">
-                            <strong>The Co-operative Bank</strong><br>
-                            <span class="text-gray-600">Ethical banking with strict ethical policy on investments</span>
-                        </li>
-                        <li class="border-l-4 border-purple-500 pl-4">
-                            <strong>Triodos Bank</strong><br>
-                            <span class="text-gray-600">Sustainable banking focused on positive impact investing</span>
-                        </li>
-                        <li class="border-l-4 border-orange-500 pl-4">
-                            <strong>Local Credit Unions</strong><br>
-                            <span class="text-gray-600">Community-owned financial cooperatives</span>
-                        </li>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-green-50 p-6 rounded-lg">
+                    <h3 class="text-lg font-semibold text-green-800 mb-3">Islamic Banks</h3>
+                    <ul class="space-y-2 text-sm text-green-700">
+                        <li>• Al Rayan Bank</li>
+                        <li>• Islamic Bank of Britain</li>
+                        <li>• Gatehouse Bank</li>
+                        <li>• UBL UK</li>
                     </ul>
                 </div>
-                <div>
-                    <h3 class="text-lg font-semibold mb-3">Campaign Best Practices</h3>
-                    <ul class="space-y-3">
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-green-500 mr-2 mt-1"></i>
-                            <span>Always approach with respect and understanding</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-green-500 mr-2 mt-1"></i>
-                            <span>Provide factual information without pressure</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-green-500 mr-2 mt-1"></i>
-                            <span>Offer practical alternatives and support</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-green-500 mr-2 mt-1"></i>
-                            <span>Follow up appropriately but not excessively</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-green-500 mr-2 mt-1"></i>
-                            <span>Respect their decision regardless of outcome</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-green-500 mr-2 mt-1"></i>
-                            <span>Keep detailed records for effective coordination</span>
-                        </li>
+                <div class="bg-blue-50 p-6 rounded-lg">
+                    <h3 class="text-lg font-semibold text-blue-800 mb-3">Ethical Banks</h3>
+                    <ul class="space-y-2 text-sm text-blue-700">
+                        <li>• Triodos Bank</li>
+                        <li>• The Co-operative Bank</li>
+                        <li>• Charity Bank</li>
+                        <li>• Ecology Building Society</li>
+                    </ul>
+                </div>
+                <div class="bg-purple-50 p-6 rounded-lg">
+                    <h3 class="text-lg font-semibold text-purple-800 mb-3">Credit Unions</h3>
+                    <ul class="space-y-2 text-sm text-purple-700">
+                        <li>• Local Credit Unions</li>
+                        <li>• Faith-based Credit Unions</li>
+                        <li>• Community Development Finance</li>
+                        <li>• Building Societies</li>
                     </ul>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- Footer -->
-        <div class="bg-gray-800 text-white p-6 rounded-lg">
+        <footer class="bg-gray-800 text-white p-8 rounded-lg">
             <div class="text-center">
-                <p class="mb-2">This campaign is conducted with respect for all communities and the belief that financial choices can reflect our values.</p>
-                <p class="text-gray-400 text-sm">Last updated: <span id="lastUpdated"></span></p>
+                <h3 class="text-xl font-semibold mb-4">Together for Justice and Ethical Finance</h3>
+                <p class="text-gray-300 mb-4">
+                    This campaign represents our collective commitment to Islamic values of justice, solidarity, and ethical conduct in all aspects of life, including our financial choices.
+                </p>
+                <div class="text-sm text-gray-400">
+                    <p>May Allah grant us success in this endeavor and guide us toward justice.</p>
+                    <p class="mt-2">"And whoever saves a life, it is as if he has saved all of mankind." - Quran 5:32</p>
+                </div>
             </div>
-        </div>
+        </footer>
     </div>
 
     <script>
-        // Initialize data storage
-        let mosqueData = JSON.parse(localStorage.getItem('mosqueData')) || [];
+        // Tracking System JavaScript
+        let mosqueData = JSON.parse(localStorage.getItem('mosqueTracking')) || [];
 
-        // Update letter template
-        function updateLetterTemplate() {
-            const senderName = document.getElementById('senderName').value || '[Your Name]';
-            const senderOrg = document.getElementById('senderOrg').value || '[Your Organization]';
-            
-            document.getElementById('displaySenderName').textContent = senderName;
-            document.getElementById('displaySenderOrg').textContent = senderOrg;
-        }
-
-        // Copy letter to clipboard
-        function copyLetter() {
-            const letterContent = document.getElementById('letterTemplate').innerText;
-            navigator.clipboard.writeText(letterContent).then(() => {
-                alert('Letter copied to clipboard!');
-            });
-        }
-
-        // Add new mosque contact
-        function addMosqueContact() {
-            const name = document.getElementById('mosqueName').value;
-            const location = document.getElementById('mosqueLocation').value;
-            const email = document.getElementById('mosqueEmail').value;
-            const phone = document.getElementById('mosquePhone').value;
-            const contact = document.getElementById('mosqueContact').value;
-
-            if (!name || !location || !email) {
-                alert('Please fill in mosque name, location, and email address.');
-                return;
-            }
-
-            const mosque = {
-                id: Date.now(),
-                name,
-                location,
-                email,
-                phone,
-                contact,
-                status: 'Not Contacted',
-                dateContacted: '',
-                response: '',
-                notes: ''
+        function updateCounts() {
+            const counts = {
+                notContacted: mosqueData.filter(m => m.status === 'not-contacted').length,
+                contacted: mosqueData.filter(m => m.status === 'contacted').length,
+                response: mosqueData.filter(m => m.status === 'response' || m.status === 'positive' || m.status === 'declined').length,
+                total: mosqueData.length
             };
 
-            mosqueData.push(mosque);
-            saveMosqueData();
-            updateMosqueTable();
-            updateStatistics();
-
-            // Clear form
-            document.getElementById('mosqueName').value = '';
-            document.getElementById('mosqueLocation').value = '';
-            document.getElementById('mosqueEmail').value = '';
-            document.getElementById('mosquePhone').value = '';
-            document.getElementById('mosqueContact').value = '';
+            document.getElementById('notContactedCount').textContent = counts.notContacted;
+            document.getElementById('contactedCount').textContent = counts.contacted;
+            document.getElementById('responseCount').textContent = counts.response;
+            document.getElementById('totalCount').textContent = counts.total;
         }
 
-        // Update mosque status
-        function updateMosqueStatus(id, status, dateContacted = '') {
-            const mosque = mosqueData.find(m => m.id === id);
-            if (mosque) {
-                mosque.status = status;
-                if (dateContacted) mosque.dateContacted = dateContacted;
-                if (status === 'Contacted' && !mosque.dateContacted) {
-                    mosque.dateContacted = new Date().toLocaleDateString();
-                }
-                saveMosqueData();
-                updateMosqueTable();
-                updateStatistics();
-            }
-        }
+        function renderMosqueList() {
+            const container = document.getElementById('mosqueList');
+            container.innerHTML = '';
 
-        // Update mosque response
-        function updateMosqueResponse(id, response) {
-            const mosque = mosqueData.find(m => m.id === id);
-            if (mosque) {
-                mosque.response = response;
-                if (response && mosque.status === 'Contacted') {
-                    mosque.status = 'Responded';
-                }
-                saveMosqueData();
-                updateMosqueTable();
-                updateStatistics();
-            }
-        }
-
-        // Delete mosque
-        function deleteMosque(id) {
-            if (confirm('Are you sure you want to delete this mosque contact?')) {
-                mosqueData = mosqueData.filter(m => m.id !== id);
-                saveMosqueData();
-                updateMosqueTable();
-                updateStatistics();
-            }
-        }
-
-        // Update mosque table
-        function updateMosqueTable() {
-            const tbody = document.getElementById('mosqueTableBody');
-            tbody.innerHTML = '';
-
-            mosqueData.forEach(mosque => {
-                const row = document.createElement('tr');
-                row.className = 'tracking-row';
-                
-                const statusColor = {
-                    'Not Contacted': 'gray',
-                    'Contacted': 'yellow',
-                    'Responded': 'green',
-                    'No Response': 'red'
-                };
-
-                row.innerHTML = `
-                    <td class="px-4 py-2 font-medium">${mosque.name}</td>
-                    <td class="px-4 py-2">${mosque.location}</td>
-                    <td class="px-4 py-2">
-                        <div>${mosque.email}</div>
-                        ${mosque.phone ? `<div class="text-gray-500 text-xs">${mosque.phone}</div>` : ''}
-                        ${mosque.contact ? `<div class="text-gray-500 text-xs">${mosque.contact}</div>` : ''}
-                    </td>
-                    <td class="px-4 py-2">
-                        <select onchange="updateMosqueStatus(${mosque.id}, this.value)" 
-                                class="text-xs border rounded px-2 py-1 bg-${statusColor[mosque.status]}-100 text-${statusColor[mosque.status]}-800">
-                            <option value="Not Contacted" ${mosque.status === 'Not Contacted' ? 'selected' : ''}>Not Contacted</option>
-                            <option value="Contacted" ${mosque.status === 'Contacted' ? 'selected' : ''}>Contacted</option>
-                            <option value="Responded" ${mosque.status === 'Responded' ? 'selected' : ''}>Responded</option>
-                            <option value="No Response" ${mosque.status === 'No Response' ? 'selected' : ''}>No Response</option>
-                        </select>
-                    </td>
-                    <td class="px-4 py-2 text-xs">${mosque.dateContacted || '-'}</td>
-                    <td class="px-4 py-2">
-                        <input type="text" value="${mosque.response}" 
-                               onchange="updateMosqueResponse(${mosque.id}, this.value)"
-                               placeholder="Response notes..." 
-                               class="text-xs border rounded px-2 py-1 w-full">
-                    </td>
-                    <td class="px-4 py-2">
-                        <button onclick="deleteMosque(${mosque.id})" 
-                                class="text-red-600 hover:text-red-800 text-xs">
-                            <i class="fas fa-trash"></i>
-                        </button>
-                    </td>
+            mosqueData.forEach((mosque, index) => {
+                const div = document.createElement('div');
+                div.className = `tracking-item bg-gray-50 p-4 rounded-lg status-${mosque.status}`;
+                div.innerHTML = `
+                    <div class="flex justify-between items-start">
+                        <div class="flex-1">
+                            <h4 class="font-semibold text-gray-800">${mosque.name}</h4>
+                            <p class="text-sm text-gray-600">${mosque.location}</p>
+                            <p class="text-sm text-gray-600">${mosque.contact}</p>
+                            ${mosque.notes ? `<p class="text-sm text-gray-500 mt-2 italic">${mosque.notes}</p>` : ''}
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <select onchange="updateStatus(${index}, this.value)" class="text-sm p-2 border rounded">
+                                <option value="not-contacted" ${mosque.status === 'not-contacted' ? 'selected' : ''}>Not Contacted</option>
+                                <option value="contacted" ${mosque.status === 'contacted' ? 'selected' : ''}>Contacted</option>
+                                <option value="response" ${mosque.status === 'response' ? 'selected' : ''}>Response Received</option>
+                                <option value="positive" ${mosque.status === 'positive' ? 'selected' : ''}>Positive Response</option>
+                                <option value="declined" ${mosque.status === 'declined' ? 'selected' : ''}>Declined</option>
+                            </select>
+                            <button onclick="addNotes(${index})" class="text-blue-600 hover:text-blue-800">
+                                <i class="fas fa-sticky-note"></i>
+                            </button>
+                            <button onclick="removeMosque(${index})" class="text-red-600 hover:text-red-800">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </div>
+                    </div>
                 `;
-                tbody.appendChild(row);
+                container.appendChild(div);
             });
         }
 
-        // Update statistics
-        function updateStatistics() {
-            const total = mosqueData.length;
-            const contacted = mosqueData.filter(m => m.status === 'Contacted' || m.status === 'Responded' || m.status === 'No Response').length;
-            const responded = mosqueData.filter(m => m.status === 'Responded').length;
-            const responseRate = contacted > 0 ? Math.round((responded / contacted) * 100) : 0;
+        function addMosque() {
+            const name = document.getElementById('newMosqueName').value;
+            const location = document.getElementById('newMosqueLocation').value;
+            const contact = document.getElementById('newMosqueContact').value;
 
-            document.getElementById('totalMosques').textContent = total;
-            document.getElementById('contactedMosques').textContent = contacted;
-            document.getElementById('respondedMosques').textContent = responded;
-            document.getElementById('successRate').textContent = responseRate + '%';
+            if (name && location && contact) {
+                mosqueData.push({
+                    name,
+                    location,
+                    contact,
+                    status: 'not-contacted',
+                    notes: '',
+                    dateAdded: new Date().toISOString()
+                });
+
+                saveData();
+                renderMosqueList();
+                updateCounts();
+
+                // Clear form
+                document.getElementById('newMosqueName').value = '';
+                document.getElementById('newMosqueLocation').value = '';
+                document.getElementById('newMosqueContact').value = '';
+            } else {
+                alert('Please fill in all fields');
+            }
         }
 
-        // Save data to localStorage
-        function saveMosqueData() {
-            localStorage.setItem('mosqueData', JSON.stringify(mosqueData));
+        function updateStatus(index, newStatus) {
+            mosqueData[index].status = newStatus;
+            mosqueData[index].lastUpdated = new Date().toISOString();
+            saveData();
+            renderMosqueList();
+            updateCounts();
         }
 
-        // Export data
+        function addNotes(index) {
+            const notes = prompt('Add notes:', mosqueData[index].notes || '');
+            if (notes !== null) {
+                mosqueData[index].notes = notes;
+                saveData();
+                renderMosqueList();
+            }
+        }
+
+        function removeMosque(index) {
+            if (confirm('Are you sure you want to remove this mosque?')) {
+                mosqueData.splice(index, 1);
+                saveData();
+                renderMosqueList();
+                updateCounts();
+            }
+        }
+
+        function saveData() {
+            localStorage.setItem('mosqueTracking', JSON.stringify(mosqueData));
+        }
+
         function exportData() {
             const dataStr = JSON.stringify(mosqueData, null, 2);
             const dataBlob = new Blob([dataStr], {type: 'application/json'});
@@ -534,7 +462,6 @@
             link.click();
         }
 
-        // Import data
         function importData(event) {
             const file = event.target.files[0];
             if (file) {
@@ -542,48 +469,53 @@
                 reader.onload = function(e) {
                     try {
                         const importedData = JSON.parse(e.target.result);
-                        if (Array.isArray(importedData)) {
+                        if (confirm('This will replace your current data. Continue?')) {
                             mosqueData = importedData;
-                            saveMosqueData();
-                            updateMosqueTable();
-                            updateStatistics();
-                            alert('Data imported successfully!');
-                        } else {
-                            alert('Invalid file format');
+                            saveData();
+                            renderMosqueList();
+                            updateCounts();
                         }
                     } catch (error) {
-                        alert('Error reading file');
+                        alert('Error reading file. Please ensure it\'s a valid JSON file.');
                     }
                 };
                 reader.readAsText(file);
             }
         }
 
-        // Clear all data
-        function clearAllData() {
-            if (confirm('Are you sure you want to clear all data? This cannot be undone.')) {
-                mosqueData = [];
-                saveMosqueData();
-                updateMosqueTable();
-                updateStatistics();
-            }
+        // Letter customization functions
+        function updateLetter() {
+            const mosqueName = document.getElementById('mosqueName').value || '[Mosque Name]';
+            const yourName = document.getElementById('yourName').value || '[Your Name]';
+            
+            const mosqueNameElements = document.querySelectorAll('.mosque-name-placeholder');
+            const yourNameElements = document.querySelectorAll('.your-name-placeholder');
+            
+            mosqueNameElements.forEach(el => el.textContent = mosqueName);
+            yourNameElements.forEach(el => el.textContent = yourName);
         }
 
-        // Initialize page
+        function copyLetter() {
+            const letterContent = document.getElementById('letterContent').innerText;
+            navigator.clipboard.writeText(letterContent).then(() => {
+                alert('Letter copied to clipboard!');
+            });
+        }
+
+        // Initialize the page
         document.addEventListener('DOMContentLoaded', function() {
-            updateMosqueTable();
-            updateStatistics();
-            document.getElementById('lastUpdated').textContent = new Date().toLocaleDateString();
+            renderMosqueList();
+            updateCounts();
         });
     </script>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"96a95f879edd8eb4","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"version":"2025.7.0","token":"4edd5f8ec12a48cfa682ab8261b80a79"}' crossorigin="anonymous"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"96a979ba2fadf667","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"version":"2025.7.0","token":"4edd5f8ec12a48cfa682ab8261b80a79"}' crossorigin="anonymous"></script>
 </body>
 </html>
     <script id="html_badge_script1">
         window.__genspark_remove_badge_link = "https://www.genspark.ai/api/html_badge/" +
-            "remove_badge?token=To%2FBnjzloZ3UfQdcSaYfDhGlFa25OM5%2FGDAScGx3WMFBh0CgPUdWtfRz2pXaQLsqkyB7Ex%2BLd7rwo5QZhWhRkPcqQuTEmnz1XZ1tlsXcb66AEPMoedR3480qM42koyjq%2Fzmxc4QVHCO6pUc7DqACV%2BvKqpY2Mukiuz%2FryWiYjx2Tf4Ve5U%2BHRtYt6peyF%2B1yynxfj%2BcPlp1iWh4Yb4FXwopVxYJIi5jcu%2ByezlJ5NLj9Pfcz6dT0O7IbgGz9j7Ac01PQIHvLozlgn%2BLoHpihArcTYMSCEkS6Hb7vcekA8ZfZnexmjxcQs2XB08%2FCgZO6o1BRAZ5m3Hmrjaq1uqN7cwfIkgVBPNFzAzl3BsIKdZRs2JqTJFaZipyWfliRanLhg4db8DbCeDgR5Ig81UFfKuh7cEYPciZ5QHVZn48ddOhfhEDPBaSm1iZrrfcbu1ZHBcpfJOQ850bxv3b94g%2B6OiBAnvvVBLpd42qW51hYPWDjKP%2BJ9SnESgHiEdQOKspE%2BA2uMFXRpIl0Xb9HaDSsl%2Bi3r4NuQr4HY3xRLKXNLgo%3D";
+            "remove_badge?token=To%2FBnjzloZ3UfQdcSaYfDvtxdzgSYOjqzpZRRA4aJhCyNP5rY9VLEebmOy7pzgyUR7gKnGkun6UBo%2Fi2sDetzLm1hGYce9d1sNB8ahVsBw65dZ1CZK6D6QkUfe2KYz%2FfcLuj1se0FOQQUiIvwN3nVOhpUkLthr%2BrWLWCeuRhN7TznhJyYWEuF8W1zMyHGoa8%2BptSZTAeBGLJfd0b9VFVJdOTYKUvbZdKIgwW%2Bg5zDcYp6x0kRf9XdyhFuMZFGAxhP1XdvIvFAE0xONq9%2F7EVxtmpzQTtwxutFgBLcKj4XasgGZCj4AtLzrNFKHfvcP4IdgpgWGXsAvosgSBgV1JeOL8IqHMcarUy4ARcUsQY%2FLJXI%2BHvTvv6ignwMlmBe7bj50u%2Fl9URZ%2FoIe2ByKvrQiAZ4TU6UU3dWPt3ygFFJ7hsOdpBBpLFT1SqC%2Fj%2FaJ88sRTZHbtS4FfwLurR7ehSCaaU%2F3VZIWw7dvCNmfF4Yj9xdUzvkdU8icu3LFkYnR%2FD44qUZNv5rsNW%2FP6ubwMBgl75fOEdu2l9ShJbn%2BFac46o%3D";
         window.__genspark_locale = "en-US";
-        window.__genspark_token = "To/BnjzloZ3UfQdcSaYfDhGlFa25OM5/GDAScGx3WMFBh0CgPUdWtfRz2pXaQLsqkyB7Ex+Ld7rwo5QZhWhRkPcqQuTEmnz1XZ1tlsXcb66AEPMoedR3480qM42koyjq/zmxc4QVHCO6pUc7DqACV+vKqpY2Mukiuz/ryWiYjx2Tf4Ve5U+HRtYt6peyF+1yynxfj+cPlp1iWh4Yb4FXwopVxYJIi5jcu+yezlJ5NLj9Pfcz6dT0O7IbgGz9j7Ac01PQIHvLozlgn+LoHpihArcTYMSCEkS6Hb7vcekA8ZfZnexmjxcQs2XB08/CgZO6o1BRAZ5m3Hmrjaq1uqN7cwfIkgVBPNFzAzl3BsIKdZRs2JqTJFaZipyWfliRanLhg4db8DbCeDgR5Ig81UFfKuh7cEYPciZ5QHVZn48ddOhfhEDPBaSm1iZrrfcbu1ZHBcpfJOQ850bxv3b94g+6OiBAnvvVBLpd42qW51hYPWDjKP+J9SnESgHiEdQOKspE+A2uMFXRpIl0Xb9HaDSsl+i3r4NuQr4HY3xRLKXNLgo=";
+        window.__genspark_token = "To/BnjzloZ3UfQdcSaYfDvtxdzgSYOjqzpZRRA4aJhCyNP5rY9VLEebmOy7pzgyUR7gKnGkun6UBo/i2sDetzLm1hGYce9d1sNB8ahVsBw65dZ1CZK6D6QkUfe2KYz/fcLuj1se0FOQQUiIvwN3nVOhpUkLthr+rWLWCeuRhN7TznhJyYWEuF8W1zMyHGoa8+ptSZTAeBGLJfd0b9VFVJdOTYKUvbZdKIgwW+g5zDcYp6x0kRf9XdyhFuMZFGAxhP1XdvIvFAE0xONq9/7EVxtmpzQTtwxutFgBLcKj4XasgGZCj4AtLzrNFKHfvcP4IdgpgWGXsAvosgSBgV1JeOL8IqHMcarUy4ARcUsQY/LJXI+HvTvv6ignwMlmBe7bj50u/l9URZ/oIe2ByKvrQiAZ4TU6UU3dWPt3ygFFJ7hsOdpBBpLFT1SqC/j/aJ88sRTZHbtS4FfwLurR7ehSCaaU/3VZIWw7dvCNmfF4Yj9xdUzvkdU8icu3LFkYnR/D44qUZNv5rsNW/P6ubwMBgl75fOEdu2l9ShJbn+Fac46o=";
     </script>
     
     <script id="html_notice_dialog_script" src="https://www.genspark.ai/notice_dialog.js"></script>
